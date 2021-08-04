@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <!-- insert javascript in head -->
+    <script>
+    function myFunction1() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+     }
+</script>
+</head>
+<body>
+<h2>External JavaScript</h2>
+<p id="demo1">A Paragraph.</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<p>(myFunction is stored in an external file called "myScript.js")</p>
+<script src="demo.js"></script>
+
+<!-- insert javascript in head -->
+<h2>JavaScript in Head</h2>
+<p id="demo">A Paragraph.</p>
+<button type="button" onclick="myFunction1()">Try it</button>
+
+
+<!--First program in js-->
+<p id="p1"></p>
+<script>
+    document.getElementById("p1").innerHTML = "Hello from JS";
+</script>
+
+
+<!-- Example with Function-->
+<button type="button" onclick="getMessage()">Click</button>
+<p id="p2"></p>
+<script>
+function getMessage() {
+document.getElementById("p2").innerHTML = "Hello from JS";
+}
+</script>
+</body>
+</html>
